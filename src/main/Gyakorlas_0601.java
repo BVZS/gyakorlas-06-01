@@ -7,7 +7,7 @@ public class Gyakorlas_0601 {
         feladatok();
     }
 
-    private static int[] sorozat = {0, 1, 2, 3};
+    private static int[] sorozat = {3, 4, 0, 12, 1, 8};
     
     private static void feladatok() {
         osszegzes();
@@ -18,6 +18,12 @@ public class Gyakorlas_0601 {
         eldontesEgy();
         eldontesMind();
         linearisKereses();
+        
+        kiir("osszegzes: " + osszegzes() + "\n");
+        kiir("megszamlalas: " + megszamlalas() + "\n");
+        kiir("maximumKivalasztas: " + maximumKivalasztas() + "\n");
+        kiir("minimumKivalasztas: " + minimumKivalasztas() + "\n");
+        kiir("kivalasztas: " + kivalasztas() + "\n");
     }
     
     public static int osszegzes() {
@@ -66,7 +72,7 @@ public class Gyakorlas_0601 {
         while(!(sorozat[i] < ker)){
             i++;
         }
-        return sorozat[i];  
+        return i;  
     }
     
     private static boolean eldontesEgy() {
