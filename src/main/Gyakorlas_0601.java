@@ -8,7 +8,11 @@ public class Gyakorlas_0601 {
     }
 
     private static void feladatok() {
-        
+        kiir("Kiiró metódus\n");
+    }
+
+    private static void kiir(String szoveg) {
+        System.out.print(szoveg);
     }
     
 }
